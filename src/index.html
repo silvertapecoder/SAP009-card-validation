@@ -14,17 +14,23 @@
 
     </header>
     <main>
-      <form action="">
-        <h1>
-          <input type="number" id="valor">
-        </h1>
-        <h2>
-          <input type="submit" onclick="capturar()" value="Enviar">
-        </h2>
-        <h3>
-          <p id="valorDigitado"></p>
-        </h3>
+      <form>
+      
+          <label for="número">Número do cartão:</label>
+          <input type="text" id="numero"
+          placeholder="0000 0000 0000 0000"
+          maxlength="16" pattern="[0-9]+"
+          autocomplete="off"
+          onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+        
+        
+          <button id="botão">Verificar</button>
+          <p class="mensagem"></p>
       </form>
+
+      <section class="clone">
+        <input id="clone" placeholder="0000 0000 0000 0000" class="clone" disabled />
+      </section>
     </main>
     <footer></footer>
     <script src="index.js" type="module"></script>
