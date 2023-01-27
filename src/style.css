@@ -24,3 +24,8 @@ input{
 input[type= submit i]{
     width: 100px;
 }
+
+#mensagem{
+    display: flex;
+    justify-content: center;
+}

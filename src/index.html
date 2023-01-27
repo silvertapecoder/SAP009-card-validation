@@ -15,17 +15,17 @@
     </header>
     <main>
       <form>
-      
+        <section class="resposta">
           <label for="número">Número do cartão:</label>
-          <input type="text" id="numero"
+          <input type="text" id="number"
           placeholder="0000 0000 0000 0000"
           maxlength="16" pattern="[0-9]+"
           autocomplete="off"
           onkeypress="return event.charCode >= 48 && event.charCode <= 57">
         
-        
-          <button id="botão">Verificar</button>
-          <p class="mensagem"></p>
+          <p id ="mensagem"></p>
+          <button id="btn">Verificar</button>
+        </section>
       </form>
 
       <section class="clone">

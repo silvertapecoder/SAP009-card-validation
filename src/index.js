@@ -1,40 +1,32 @@
-import validator from './validator.js';
+//import validator from './validator.js';
 
-console.log(validator);
+//console.log(validator);
 
-let cardNumber = document.getElementById("numero");
-let reversedCardNumber = cardNumber.reverse();
-console.log('este é o numero invertido' + reversedCardNumber + '.')
+let creditCardNumber = document.getElementById("number")
+//let numberArray = cardNumber.split("");
+//let reversedCardNumber = numberArray.reverse();
+let button = document.getElementById("btn")
+let message = document.getElementById("mensagem")
+
+button.addEventListener('click', cardvalidation)
+
+
 
 function cardvalidation (event){
     event.preventDefault()
+    const numberInput = creditCardNumber.value
 
-    const numeroDigitado = number.value
-    const validado = validator.isValid(numeroDigitado)
+   // const validado = validator.isValid(numeroDigitado)
 
-    if(
-        numeroDigitado === "" ||
-        numeroDigitado === "0000000000000000" ||
-        numeroDigitado === "000000000000000" ||
-        numeroDigitado === "00000000000000" ||
-        numeroDigitado.length <= 13){
-            return (message.innerHTML = "Por favor, digite um número válido!")
+    
+   
+   if(numberInput.length <= 13){
+            return (message.innerHTML = "Número incompleto!")
         }
 
-    else if(validado === true){
-        return(message.innerHTML = "Velidado")
-    }
+   
 
-    else if(validado === false){
-        return(message.innerHTML = "Não validado")
-    }
-}
-
-number.addEventListner("keyup", clone);
-function clone (){
-    const value = document.getElementById("numero").value
-
-    const ocult= validator.maskify(value)
     
-    const clone= document.getElementById("clone").value = ocult
 }
+
+    

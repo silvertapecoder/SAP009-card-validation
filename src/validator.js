@@ -2,8 +2,57 @@
 //inverter números
 
 const validator = {
-  reversedCardNumber
+ 
+  isValid(creditCardNumber){
+    /*const arrayCard =  [];
+    for (let i = 0; i < creditCardNumber.legth; i++){
+      const digit = parseInt(creditCardNumber[i]);
+      arrayCard.push(digit);
+    }
+
+    const fromBackToFront = arrayCard.reverse();
+
+    for (let i = 0; i < fromBackToFront)
+  }*/
+
+  let arrayCard = creditCardNumber.split('');
+  
+  let cardNumberReversed = arrayCard.reverse();
+
+  function multiplyEvenNumbers (){
+  
+    let evenNumbers = [];
+    
+    for (let i = 0; i < creditCardNumber.legth; i++){
+      const digit = creditCardNumber[i];
+      if (digit % 2 === 0){
+        evenNumbers.push(digit);
+      }
+
+      if else (i => 10){
+        const sumDigits = i -9;
+        evenNumbers.push(sumDigits);
+      }
+    }    
+  }
+ 
+  function SumOfDigits(){
+    let numbersSummedUp = 0;
+    for(let i= 0; i<evenNumbers.length; i++){
+      numbersSummedUp = numbersSummedUp + evenNumbers[i];
+    
+      let oddNumbers = []
+    
+    }
+
+  numbersSummedUp.push(evenNumbers);
+
+
+
+  }
+}
 };
+
   
 
 
