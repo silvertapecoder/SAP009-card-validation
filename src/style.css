@@ -21,6 +21,18 @@ input{
     
 }
 
+button{
+    border:3px solid rgb(44, 87, 44);
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 3px 3px 0px rgb(44, 87, 44);
+    font-family: 'Raleway', sans-serif;
+}
+
 input[type= submit i]{
     width: 100px;
 }
